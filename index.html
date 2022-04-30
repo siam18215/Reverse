@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exam</title><script>
+        function palin()
+        {
+        var a,no,b,temp=0;
+        
+        no=Number(document.getElementById("no_input").value);
+        
+        b=no;
+        while(no>0)
+        {
+        a=no%10;
+        no=parseInt(no/10);
+        temp=temp*10+a;
+        }
+        document.write(temp)
+        }
+        </script>
+</head>
+<body>
+    <div class="container">
+        <h3 class="text"> Reverse of a number using JavaScript</h3>
+        <form action="/">
+            <label for="fname"  >Enter A number: </label>
+            
+                
+           
+            <input type="number" id="no_input"  placeholder="enter a number">
+           
+                <button onclick="palin()">Reverse</button> <br> <br>
+         
+            <label for="fname" id = "demo" >Result </label>
+            <input type="text"   ><br><br>
+          
+        
+          </form>
+         
+      
+    </div>
+ 
+</body>
+</html>
